@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Lumiri Surgical`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Website for Lumiri.`,
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -18,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `lumiri-site`,
+        short_name: `Lumiri Surgical`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
