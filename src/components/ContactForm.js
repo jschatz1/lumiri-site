@@ -54,7 +54,7 @@ export default () => {
     margin: "20px",
   }
   return (
-    <div className="box" style={boxStyle}>
+    <>
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -112,10 +112,10 @@ export default () => {
             ></textarea>
           </div>
         </div>
-        <button type="submit" className="button is-light">
+        <button type="submit" className="button primary">
           Submit
         </button>
       </form>
-    </div>
+    </>
   )
 }
