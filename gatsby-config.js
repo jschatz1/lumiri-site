@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Lumiri Surgical`,
     description: `Website for Lumiri.`,
-    author: `@gatsbyjs`,
+    author: `Michael Wells`,
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
@@ -27,8 +27,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `lumiri-site`,
-        short_name: `Lumiri Surgical`,
+        name: `Lumiri Surgical`,
+        short_name: `Lumiri`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
