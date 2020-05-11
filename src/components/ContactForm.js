@@ -1,12 +1,12 @@
 import React, { useState } from "react"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
+import { navigate } from "gatsby"
 
 export default () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
-
   const encode = data => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -22,19 +22,14 @@ export default () => {
       body: encode(data),
     })
       .then(() => {
-        toast.info("Message Sent!")
-        resetForm()
+        navigate("/success")
       })
       .catch(error => {
-        toast.error("Message Failed to Send")
+        toast.error("Message Failed to Send", error)
         console.log(error)
       })
 
     e.preventDefault()
-  }
-
-  const resetForm = () => {
-    document.getElementById("contact-form").reset()
   }
 
   const handleChange = e => {
@@ -71,7 +66,7 @@ export default () => {
         id="contact-form"
         name="contact"
         onSubmit={handleSubmit}
-        class="contact__form"
+        className="contact__form"
         netlify-honeypot="bot-field"
         data-netlify="true"
       >
@@ -85,6 +80,7 @@ export default () => {
               name="name"
               value={name}
               onChange={handleChange}
+              required
             />
           </div>
         </div>
@@ -97,6 +93,7 @@ export default () => {
               name="email"
               value={email}
               onChange={handleChange}
+              required
             />
           </div>
         </div>
@@ -109,6 +106,7 @@ export default () => {
               name="message"
               value={message}
               onChange={handleChange}
+              required
             ></textarea>
           </div>
         </div>
