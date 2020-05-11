@@ -6,9 +6,9 @@ import logo from "../images/logo.png"
 const Header = ({ siteTitle }) => {
   return (
     <>
-      <section class="hero is-primary">
-        <div class="hero-body">
-          <div class="container">
+      <section className="hero is-primary">
+        <div className="hero-body">
+          <div className="container">
             <div className="navbar-brand">
               <Link to="/">
                 <img src={logo} alt="lumiri logo"></img>

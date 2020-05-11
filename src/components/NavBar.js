@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import logo from "../images/logo.png"
 
 const NavBar = ({ siteTitle }) => {
   const [isActive, setisActive] = React.useState(false)
@@ -14,7 +13,7 @@ const NavBar = ({ siteTitle }) => {
       <div className="navbar-brand">
         <Link to="/">
           <h2
-            className="is-size-3"
+            className="is-size-1"
             style={{ paddingLeft: "1rem", paddingRight: "1rem" }}
           >
             {siteTitle}
@@ -44,9 +43,20 @@ const NavBar = ({ siteTitle }) => {
           <Link className="navbar-item" to="about">
             About
           </Link>
-          <Link className="navbar-item" to="patientinfo">
-            Patient Info
-          </Link>
+          <div className="navbar-item has-dropdown is-hoverable">
+            <a className="navbar-link">Patient Information</a>
+            <div className="navbar-dropdown">
+              <Link className="navbar-item" to="patientinfo">
+                Insurance
+              </Link>
+              <Link className="navbar-item" to="patientinfo">
+                Documents
+              </Link>
+              <Link className="navbar-item" to="patientinfo">
+                Patient Portal
+              </Link>
+            </div>
+          </div>
           <Link className="navbar-item" to="faq">
             FAQ
           </Link>
