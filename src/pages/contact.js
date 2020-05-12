@@ -21,7 +21,7 @@ export default () => {
               </div>
             </div>
             <h2 className="title is-4">Phone:</h2>
-            <p>454-545-5454</p>
+            <p>454-545-5434</p>
           </div>
         </div>
         <div className="column">
