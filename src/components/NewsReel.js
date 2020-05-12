@@ -30,7 +30,7 @@ export default () => {
       {feed.items.map((item, i) => (
         <div className="box" key={i}>
           <img src={item.media.$.url} alt={item.title} />
-          <a to={item.link}>
+          <a href={item.link}>
             <h3 className="title is-3">{item.title}</h3>
             <p>{item.contentSnippet}</p>
           </a>
