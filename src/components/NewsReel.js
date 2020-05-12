@@ -12,7 +12,7 @@ export default () => {
     })
     try {
       const feed = await parser.parseURL(
-        `${CORS_PROXY}https://medicalxpress.com/rss-feed/breaking/surgery-news/`
+        `https://medicalxpress.com/rss-feed/breaking/surgery-news/`
       )
       setFeed(feed)
     } catch (error) {
