@@ -44,9 +44,11 @@ const NavBar = ({ siteTitle }) => {
             About
           </Link>
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">Patient Information</a>
+            <Link className="navbar-link" to="patientinfo">
+              Patient Information
+            </Link>
             <div className="navbar-dropdown">
-              <Link className="navbar-item" to="patientinfo">
+              <Link className="navbar-item" to="patientinfo/insurance">
                 Insurance
               </Link>
               <Link className="navbar-item" to="patientinfo">
