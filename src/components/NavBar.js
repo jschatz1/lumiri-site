@@ -54,9 +54,9 @@ const NavBar = ({ siteTitle }) => {
               <Link className="navbar-item" to="patientinfo">
                 Documents
               </Link>
-              <Link className="navbar-item" to="patientinfo">
+              <a className="navbar-item" href="https://patientally.com">
                 Patient Portal
-              </Link>
+              </a>
             </div>
           </div>
           <Link className="navbar-item" to="faq">
