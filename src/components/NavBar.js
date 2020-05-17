@@ -1,6 +1,12 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons"
 
 const NavBar = ({ siteTitle }) => {
   const [isActive, setisActive] = React.useState(false)
@@ -65,6 +71,17 @@ const NavBar = ({ siteTitle }) => {
           <Link className="navbar-item" to="contact">
             Contact
           </Link>
+        </div>
+        <div className="navbar-end">
+          <a href="https://facebook.com" className="navbar-item">
+            <FontAwesomeIcon size="lg" icon={faFacebook} />
+          </a>
+          <a href="https://instagram.com" className="navbar-item">
+            <FontAwesomeIcon size="lg" icon={faInstagram} />
+          </a>
+          <a href="https://twitter.com" className="navbar-item">
+            <FontAwesomeIcon size="lg" icon={faTwitter} />
+          </a>
         </div>
       </div>
     </nav>
