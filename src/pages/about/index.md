@@ -1,21 +1,17 @@
 ---
 templateKey: about-page
 path: /about
-title: Welcome
+title: About Lumiri
 ---
 
+### Lumiri Surgical is a surgery practice located in Montgomery and Prince George’s counties, with an emphasis on advanced minimally invasive surgical techniques.
 
-```
-let x = 'this';
-let y = 'that';
-```
+---
 
-### Thanks for coming!
+Dr. Tiffany Schatz was trained in advanced minimally invasive approaches, with laparoscopic, thoracoscopic, and robotic procedures, as well as minimally invasive work-up of chest masses/lymphadenopathy with EBUS and endoscopy/bronchoscopy. She loves taking care of patients during a time in their lives when things are uncertain or frightening in the setting of illness and need for surgical evaluation and treatment.
 
-### In non est at urna vestibulum pretium. Fusce risus dui, bibendum in tristique at, finibus sit amet dui.
+> #### “There is no greater reward than to be able to meet a patient in that situation and know that I have the knowledge and skill to intervene, and I will do everything I can to help, and bring them safely to health, wholeness, and comfort.”
 
-Nunc tempor semper magna, id semper nisi ullamcorper et. Phasellus venenatis tincidunt aliquam. Phasellus mattis lobortis eros quis viverra. Nullam at magna purus. Nunc eu orci nec dui vestibulum auctor. Aenean faucibus pharetra magna, vitae dictum leo dignissim quis. Phasellus vitae aliquam nisl, in finibus urna. Aliquam consequat quis tortor quis eleifend. Sed in ligula et orci blandit iaculis id ut lorem. Praesent eu elementum metus, accumsan finibus orci. Etiam mauris velit, bibendum et lacinia non, bibendum sit amet leo. Pellentesque vitae purus sem. Donec odio dolor, accumsan non convallis non, molestie in turpis.
+Dr. Schatz’s practice focuses on lung cancer and chest masses, paraesophageal hernias, esophageal and GI complaints, palliative surgery, as well as evaluation and treatment of general surgical problems (with special focus on problems that affect the chest, such as substernal goiter).
 
-### Proin nec vulputate risus, ac ullamcorper mi.
-
-Curabitur scelerisque, ipsum eget tempus placerat, tortor enim aliquet tellus, nec posuere enim quam a augue. Proin fringilla est vel nunc rhoncus, quis lacinia sapien rhoncus. Aliquam lorem ex, volutpat sit amet imperdiet nec, sagittis eget metus. Vivamus a ornare metus, nec aliquam metus. Aliquam suscipit imperdiet dolor. Sed suscipit suscipit metus nec gravida. Nulla vitae ultrices lorem, et vulputate tortor. Morbi massa nisi, aliquam in est eget, cursus efficitur est. Proin tellus sem, viverra a ultricies eget, commodo vitae eros.
+Dr. Schatz grew up outside Philadelphia in Kennett Square, PA \([Longwood Gardens](https://longwoodgardens.org/), [the Mushroom Festival](https://mushroomfestival.org/)\) earned her undergraduate degree magna-cum-laude at [Messiah College](https://www.messiah.edu/). She then attended [The Medical School for International Health](https://msih.bgu.ac.il/) at Ben-Gurion University in Beer Sheva, Israel, where she studied medicine as well as, cross-cultural medical care, with emphasis on international and resource poor settings. She then moved to Waterbury, CT for residency in general surgery at [Waterbury Hospital](https://www.waterburyhospital.org/), affiliated with Yale University School of Medicine. She then trained in minimally invasive thoracic surgery, including robotic surgery, at [Fox Chase Cancer Center](https://www.foxchase.org/), affiliated with Temple University. She is board certified by the [American Board of Surgery \(ABS\)](http://www.absurgery.org/). Dr. Schatz maintains membership in the [American College of Surgeons](https://www.facs.org/), the [Society of Thoracic Surgeons](https://www.sts.org/), and the [American Medical Association](https://www.ama-assn.org/). She relocated to the DMV in 2017, and lives with her handsome husband and three beloved children.
