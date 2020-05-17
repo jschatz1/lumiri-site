@@ -8,6 +8,11 @@ const Header = ({ siteTitle }) => {
     <>
       <section className="hero is-primary">
         <div className="hero-body">
+          <div className="buttons navbar-end navbar-item">
+            <Link to="/news" className="button is-primary is-inverted">
+              <strong type="button">In The News</strong>
+            </Link>
+          </div>
           <div className="container">
             <div className="navbar-brand">
               <Link to="/">
