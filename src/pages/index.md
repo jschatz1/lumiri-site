@@ -3,6 +3,7 @@ templateKey: index-page
 path: /
 title: Welcome to Lumiri Surgical
 ---
+![art](/assets/wtlm_benoitmarie_1-730x983.jpg "art")
 
 ### In non est at urna vestibulum pretium. Fusce risus dui, bibendum in tristique at, finibus sit amet dui.
 
