@@ -60,6 +60,9 @@ const NavBar = ({ siteTitle }) => {
               <Link className="navbar-item" to="patientinfo">
                 Documents
               </Link>
+              <Link className="navbar-item" to="patientinfo/procedures">
+                Skills & Procedures
+              </Link>
               <a className="navbar-item" href="https://patientally.com">
                 Patient Portal
               </a>
