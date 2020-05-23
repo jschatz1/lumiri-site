@@ -76,6 +76,14 @@ const NavBar = ({ siteTitle }) => {
           </Link>
         </div>
         <div className="navbar-end">
+          <div
+            className="buttons navbar-end navbar-item"
+            style={{ marginBottom: "-10px" }}
+          >
+            <Link to="/news" className="button is-primary is-inverted">
+              <strong type="button">In The News</strong>
+            </Link>
+          </div>
           <a href="https://facebook.com" className="navbar-item">
             <FontAwesomeIcon size="lg" icon={faFacebook} />
           </a>
