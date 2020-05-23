@@ -5,3 +5,22 @@
 @import "~bulmaswatch/flatly/_variables.scss";
 @import "~bulma/bulma.sass";
 @import "~bulmaswatch/flatly/_overrides.scss";
+
+.iframe-container {
+  overflow: hidden;
+  // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+  height: 500px;
+  width: 300px;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 500px;
+  width: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

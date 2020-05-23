@@ -1,5 +1,5 @@
 ---
-templateKey: index-page
+templateKey: base
 path: /documents
 title: Patient Forms
 ---

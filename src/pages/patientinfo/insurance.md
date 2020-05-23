@@ -1,5 +1,5 @@
 ---
-templateKey: index-page
+templateKey: base
 path: /insurance
 title: Insurance Information
 ---

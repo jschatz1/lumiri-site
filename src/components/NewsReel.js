@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react"
 import RSSParser from "rss-parser"
+import BottomScrollListener from "react-bottom-scroll-listener"
 
 export default () => {
   const [feed, setFeed] = useState({ title: "", items: [] })
+  const [feedArray, setFeedArray] = useState([])
   const rssFeed = async () => {
     const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
     let parser = new RSSParser({

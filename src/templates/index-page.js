@@ -16,6 +16,16 @@ export const IndexPageTemplate = ({ title, content, contentComponent }) => {
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
+              <div className="video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/QJR1aodXH20"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
               <PageContent className="content" content={content} />
             </div>
           </div>
