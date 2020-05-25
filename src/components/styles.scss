@@ -5,7 +5,7 @@
 @import "~bulmaswatch/flatly/_variables.scss";
 @import "~bulma/bulma.sass";
 @import "~bulmaswatch/flatly/_overrides.scss";
-
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Varela+Round&display=swap");
 .iframe-container {
   overflow: hidden;
   // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
@@ -23,4 +23,12 @@
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+h2 {
+  font-family: "Varela Round", sans-serif;
+  text-transform: uppercase;
+}
+body {
+  font-family: "Karla", sans-serif;
 }
