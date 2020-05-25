@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react"
-import RSSParser from "rss-parser"
-import Loader from "react-loader-spinner"
+import React from "react"
 
 export default ({ feed }) => {
   return (

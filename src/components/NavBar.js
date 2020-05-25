@@ -26,7 +26,7 @@ const NavBar = ({ siteTitle }) => {
           </h2>
         </Link>
 
-        <a
+        <div
           onClick={() => {
             setisActive(!isActive)
           }}
@@ -38,7 +38,7 @@ const NavBar = ({ siteTitle }) => {
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </a>
+        </div>
       </div>
 
       <div className={`navbar-menu ${isActive ? "is-active" : ""}`}>

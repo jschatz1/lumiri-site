@@ -45,9 +45,6 @@ export default () => {
     }
   }
 
-  const boxStyle = {
-    margin: "20px",
-  }
   return (
     <>
       <ToastContainer
@@ -73,10 +70,10 @@ export default () => {
         <input type="hidden" name="form-name" value="Contact" />
         <div className="field">
           <label className="label">Name</label>
-          <div className="control">
+          <div>
             <input
               type="text"
-              className="input"
+              className="input control"
               name="name"
               value={name}
               onChange={handleChange}
@@ -86,10 +83,10 @@ export default () => {
         </div>
         <div className="field">
           <label className="label">Email address</label>
-          <div className="control">
+          <div>
             <input
               type="email"
-              className="input"
+              className="input control"
               name="email"
               value={email}
               onChange={handleChange}
@@ -99,9 +96,9 @@ export default () => {
         </div>
         <div className="field">
           <label className="label">Message</label>
-          <div className="control">
+          <div>
             <textarea
-              className="textarea"
+              className="textarea control"
               rows="5"
               name="message"
               value={message}

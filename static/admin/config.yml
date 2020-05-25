@@ -24,8 +24,8 @@ collections:
               widget: "hidden",
               default: "about-page",
             }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
       - file: "src/pages/index.md"
         label: "Index"
         name: "index"
@@ -37,6 +37,18 @@ collections:
               default: "index-page",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: Heading, name: heading, widget: string }
+          - {
+              label: Main,
+              name: main,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: text },
+                  { label: Featured, name: featured, widget: text },
+                ],
+            }
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/faq/index.md"
         label: "FAQ"
