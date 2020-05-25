@@ -1,41 +1,29 @@
 import React, { useState, useEffect } from "react"
 import RSSParser from "rss-parser"
-import BottomScrollListener from "react-bottom-scroll-listener"
+import Loader from "react-loader-spinner"
 
-export default () => {
-  const [feed, setFeed] = useState({ title: "", items: [] })
-  const [feedArray, setFeedArray] = useState([])
-  const rssFeed = async () => {
-    const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
-    let parser = new RSSParser({
-      customFields: {
-        item: [["media:thumbnail", "media"]],
-      },
-    })
-    try {
-      const feed = await parser.parseURL(
-        `${CORS_PROXY}https://medicalxpress.com/rss-feed/breaking/surgery-news/`
-      )
-      setFeed(feed)
-    } catch (error) {
-      console.log(error)
-    }
-  }
-
-  useEffect(() => {
-    rssFeed()
-  }, [])
-
+export default ({ feed }) => {
   return (
-    <div className="container">
-      <h2 className="title is-2">{feed.title}</h2>
-      {feed.items.map((item, i) => (
-        <div className="box" key={i}>
-          <img src={item.media.$.url} alt={item.title} />
-          <a href={item.link}>
-            <h3 className="title is-3">{item.title}</h3>
-            <p>{item.contentSnippet}</p>
-          </a>
+    <div>
+      <h2 className="title is-2">Surgical News</h2>
+      {feed.map((item, i) => (
+        <div className="is-parent tile">
+          <div className="is-child tile box">
+            <div className="media" key={i}>
+              <figure className="media-left">
+                <img src={item.media.$.url} alt={item.title} />
+              </figure>
+              <div className="media-content">
+                <div>
+                  <a href={item.link}>
+                    <h3 className="is-size-3">{item.title}</h3>
+                  </a>
+                  <small>{item.pubDate}</small>
+                  <p className="is-dark is-size-4">{item.contentSnippet}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
