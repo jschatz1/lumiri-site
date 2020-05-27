@@ -2,12 +2,19 @@ module.exports = {
   siteMetadata: {
     title: `Lumiri Surgical`,
     description: `Website for Lumiri.`,
+    siteUrl: `http://localhost:8000`,
     author: `Michael Wells`,
   },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        exclude: ["/admin", "/success"],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
