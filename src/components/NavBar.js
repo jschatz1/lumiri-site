@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import logo from "../images/logo.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faFacebook,
@@ -16,14 +17,12 @@ const NavBar = ({ siteTitle }) => {
       role="navigation"
       aria-label="main navigation"
     >
-      <div className="navbar-brand">
+      <div
+        className="navbar-brand"
+        style={{ paddingLeft: "1rem", paddingRight: "1rem" }}
+      >
         <Link to="/">
-          <h2
-            className="is-size-1"
-            style={{ paddingLeft: "1rem", paddingRight: "1rem" }}
-          >
-            {siteTitle}
-          </h2>
+          <img src={logo} alt="lumiri logo"></img>
         </Link>
 
         <div
