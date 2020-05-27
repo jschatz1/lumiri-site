@@ -6,6 +6,7 @@ import { navigate } from "gatsby"
 export default () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
+  const [phone, setPhone] = useState("")
   const [message, setMessage] = useState("")
   const encode = data => {
     return Object.keys(data)
@@ -14,7 +15,7 @@ export default () => {
   }
 
   const handleSubmit = e => {
-    const data = { "form-name": "contact", name, email, message }
+    const data = { "form-name": "contact", name, email, phone, message }
 
     fetch("/", {
       method: "POST",
@@ -39,6 +40,9 @@ export default () => {
     }
     if (name === "email") {
       return setEmail(value)
+    }
+    if (name === "phone") {
+      return setPhone(value)
     }
     if (name === "message") {
       return setMessage(value)
@@ -89,6 +93,19 @@ export default () => {
               className="input control"
               name="email"
               value={email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+        </div>
+        <div className="field">
+          <label className="label">Phone Number</label>
+          <div>
+            <input
+              type="tel"
+              className="input control"
+              name="phone"
+              value={phone}
               onChange={handleChange}
               required
             />
