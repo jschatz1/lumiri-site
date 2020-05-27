@@ -67,9 +67,7 @@ const NavBar = ({ siteTitle }) => {
               </a>
             </div>
           </div>
-          <Link className="navbar-item" to="faq">
-            FAQ
-          </Link>
+
           <Link className="navbar-item" to="contact">
             Contact
           </Link>
