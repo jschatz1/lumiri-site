@@ -33,7 +33,7 @@ export default () => {
   return (
     <Layout>
       <SEO title="News" />
-      <div className="section">
+      <div className="section contain">
         {loading ? (
           <Loader
             type="Puff"
