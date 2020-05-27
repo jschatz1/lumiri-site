@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Content, { HTMLContent } from "../components/Content"
 import SEO from "../components/seo"
+import VideoHero from "../components/VideoHero"
 export const IndexPageTemplate = ({
   title,
   heading,
@@ -15,48 +16,43 @@ export const IndexPageTemplate = ({
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div>
-          <div className="section">
-            <div className="tile is-ancestor is-vertical">
-              <div className="tile">
-                <div className="tile is-parent">
-                  <div className="is-child notification is-primary tile">
-                    <h2 className="title is-size-2">{main.title}</h2>
-                    <h4 className="subtitle is-size-4">{main.description}</h4>
+    <>
+      <section className="section contain">
+        <div className="container">
+          <div>
+            <div className="section">
+              <div className="tile is-ancestor is-vertical">
+                <div className="tile">
+                  <div className="tile is-parent">
+                    <div className="is-child notification is-primary tile">
+                      <h2 className="title is-size-2">{main.title}</h2>
+                      <h4 className="subtitle is-size-4">{main.description}</h4>
+                    </div>
                   </div>
-                </div>
-                <div className="tile is-parent">
-                  <div className="is-child notification is-white tile">
-                    <h4 className="subtitle is-size-4">{main.featured}</h4>
+                  <div className="tile is-parent">
+                    <div className="is-child notification is-white tile">
+                      <h4 className="subtitle is-size-4">{main.featured}</h4>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="is-parent tile">
-                <article className="tile is-child is-primary box">
-                  <PageContent
-                    className="content is-size-5"
-                    content={content}
-                  />
-                </article>
-              </div>
-            </div>
-
-            <div className="video">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/QJR1aodXH20"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
             </div>
           </div>
         </div>
+      </section>
+
+      <VideoHero />
+      <div className="section contain">
+        <div className="is-ancestor tile">
+          <article className="tile is-parent is-primary">
+            <PageContent
+              className="tile is-child content is-size-4"
+              content={content}
+            />
+          </article>
+        </div>
       </div>
-    </section>
+    </>
   )
 }
 
