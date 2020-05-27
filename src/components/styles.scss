@@ -10,7 +10,7 @@
   overflow: hidden;
   // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
   height: 500px;
-  width: 300px;
+  width: 400px;
   padding-top: 56.25%;
   position: relative;
 }
@@ -18,11 +18,17 @@
 .iframe-container iframe {
   border: 0;
   height: 500px;
-  width: 200px;
+  margin: 0 auto;
+  width: 300px;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
+}
+.doxyme-badge-start-a-call-div > a {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 h2 {
