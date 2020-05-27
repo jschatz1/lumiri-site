@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: Michael-Wayne-Wells/lumiri-gatsby-site
   commit_messages:
   create: "Create {{collection}} “{{slug}}”"
