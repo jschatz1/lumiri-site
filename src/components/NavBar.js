@@ -3,11 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/logo.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faFacebook,
-  faInstagram,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons"
 
 const NavBar = ({ siteTitle }) => {
   const [isActive, setisActive] = React.useState(false)
@@ -16,13 +12,18 @@ const NavBar = ({ siteTitle }) => {
       className="navbar primary is-bold"
       role="navigation"
       aria-label="main navigation"
+      style={{ paddingRight: "20px" }}
     >
       <div
         className="navbar-brand"
         style={{ paddingLeft: "1rem", paddingRight: "1rem" }}
       >
         <Link to="/">
-          <img src={logo} alt="lumiri logo"></img>
+          <img
+            src={logo}
+            alt="lumiri logo"
+            style={{ width: "50px", paddingTop: "15px" }}
+          ></img>
         </Link>
 
         <div
@@ -62,9 +63,12 @@ const NavBar = ({ siteTitle }) => {
               <Link className="navbar-item" to="patientinfo/specialties">
                 Subspecialties and Areas of Clinical Concentration
               </Link>
-              <a className="navbar-item" href="https://patientally.com">
-                Patient Portal
-              </a>
+              <Link className="navbar-item" to="patientinfo/telemedicine">
+                Telemedicine Call
+              </Link>
+              <Link className="navbar-item" to="news">
+                Surgery News Feed
+              </Link>
             </div>
           </div>
 
@@ -77,16 +81,14 @@ const NavBar = ({ siteTitle }) => {
             className="buttons navbar-end navbar-item"
             style={{ marginBottom: "-10px" }}
           >
-            <Link to="/news" className="button is-primary is-inverted">
-              <strong type="button">In The News</strong>
-            </Link>
+            <a href="https://patientally.com" className="button is-primary">
+              <strong type="button">Patient Portal</strong>
+            </a>
           </div>
           <a href="https://facebook.com" className="navbar-item">
             <FontAwesomeIcon size="lg" icon={faFacebook} />
           </a>
-          <a href="https://instagram.com" className="navbar-item">
-            <FontAwesomeIcon size="lg" icon={faInstagram} />
-          </a>
+
           <a href="https://twitter.com" className="navbar-item">
             <FontAwesomeIcon size="lg" icon={faTwitter} />
           </a>

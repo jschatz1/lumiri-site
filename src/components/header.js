@@ -1,48 +1,45 @@
-import PropTypes from "prop-types"
 import React from "react"
-import NavBar from "./NavBar"
 import { Link } from "gatsby"
+import doc from "../images/doc.jpg"
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   return (
     <>
-      <section className="hero is-primary">
+      <section
+        className="hero"
+        style={{
+          background: `linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ), url(${doc})`,
+          backgroundAttachment: "fixed",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
         <div className="hero-body">
           <div className="container">
             <div style={{ textAlign: "center" }}>
               <Link to="/">
-                <h2
-                  className="is-size-1"
+                <h1
+                  className="title has-text-primary is-1"
                   style={{
                     paddingLeft: "1rem",
                     paddingRight: "1rem",
+                    fontSize: "75px",
                     fontWeight: "bold",
+                    textShadow: "1px 1px black",
                   }}
                 >
-                  {siteTitle}
-                </h2>
+                  Lumiri Surgical
+                </h1>
               </Link>
-
-              <p className="is-size-4">Tiffany Schatz, M.D.</p>
-              <p className="is-size-4">Thoracic and General Surgery</p>
-              <p className="is-size-4">
-                Serving Montgomery and Prince George's Counties
-              </p>
+              <p className="is-size-3">Tiffany Schatz, M.D.</p>
+              <p className="is-size-3">Thoracic and General Surgery</p>
             </div>
           </div>
         </div>
-        <NavBar siteTitle={siteTitle} />
       </section>
     </>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header
