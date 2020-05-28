@@ -17,7 +17,7 @@ export default ({ feed }) => {
                     <h3 className="is-size-3">{item.title}</h3>
                   </a>
                   <small>{item.pubDate}</small>
-                  <p className="is-dark is-size-4">{item.contentSnippet}</p>
+                  <p className="is-dark is-size-5">{item.contentSnippet}</p>
                 </div>
               </div>
             </div>
