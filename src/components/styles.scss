@@ -1,27 +1,31 @@
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Varela+Round&display=swap");
 
 // If need, change your variables before importing Bulma
 
-@import "~bulmaswatch/flatly/_variables.scss";
+@import "~bulmaswatch/litera/_variables.scss";
+$family-sans-serif: "Karla", sans-serif;
 @import "~bulma/bulma.sass";
-@import "~bulmaswatch/flatly/_overrides.scss";
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Varela+Round&display=swap");
-.iframe-container {
-  overflow: hidden;
-  // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
-  height: 600px;
-  width: 400px;
-  margin-left: 20px;
-  margin-top: 10px;
-  padding-top: 56.25%;
-  position: relative;
+@import "~bulmaswatch/litera/_overrides.scss";
+html {
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
 }
-
 .contain {
   margin: 0 auto;
   max-width: 960px;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+.iframe-container {
+  overflow: hidden;
+  // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+  height: 600px;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-top: 56.25%;
+  position: relative;
 }
 
 .iframe-container iframe {
@@ -35,11 +39,6 @@
   width: 100%;
 }
 
-h2 {
-  font-family: "Varela Round", sans-serif;
+h1 {
   text-transform: uppercase;
-}
-body {
-  font-family: "Karla", sans-serif;
-  font-size: 18px;
 }
