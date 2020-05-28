@@ -46,7 +46,10 @@ export default () => {
         ) : (
           ""
         )}
-        <div className="tile is-ancestor is-vertical">
+        <div
+          className="tile is-ancestor is-vertical"
+          style={{ minHeight: "400px" }}
+        >
           <NewsReel feed={feed.items} />
         </div>
       </div>
