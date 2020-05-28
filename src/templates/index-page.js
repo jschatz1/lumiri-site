@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Header from "../components/Header"
 import Content, { HTMLContent } from "../components/Content"
 import SEO from "../components/seo"
 import VideoHero from "../components/VideoHero"
@@ -17,6 +18,7 @@ export const IndexPageTemplate = ({
 
   return (
     <>
+      <Header />
       <section className="section contain">
         <div className="container">
           <div>
