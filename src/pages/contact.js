@@ -19,34 +19,31 @@ export default () => {
         </div>
         <div className="columns">
           <div className="column">
-            <div className="iframe-container">
-              <iframe src={"/tele.html"} />
+            <div className="box" style={boxStyle}>
+              <div className="number-wrap">
+                <h2 className="title is-4">
+                  Phone:
+                  <span className="is-size-5"> (240) 241-0420</span>{" "}
+                </h2>
+
+                <h2 className="title is-4">
+                  Fax:<span className="is-size-5"> (862) 298-0732</span>
+                </h2>
+
+                <h2 className="is-size-4">Address:</h2>
+                <div className="is-size-5">
+                  <p>5550 Friendship Blvd Suite 360</p>
+                  <p> Chevy Chase, MD 20815</p>
+                </div>
+
+                <GoogleMap />
+              </div>
             </div>
           </div>
           <div className="column">
             <div className="box" style={boxStyle}>
               <ContactForm />
             </div>
-          </div>
-        </div>
-        <div className="box" style={boxStyle}>
-          <div className="number-wrap">
-            <h2 className="title is-4">
-              Phone:
-              <span className="is-size-5"> (240) 241-0420</span>{" "}
-            </h2>
-
-            <h2 className="title is-4">
-              Fax:<span className="is-size-5"> (862) 298-0732</span>
-            </h2>
-
-            <h2 className="is-size-4">Address:</h2>
-            <div className="is-size-5">
-              <p>5550 Friendship Blvd Suite 360</p>
-              <p> Chevy Chase, MD 20815</p>
-            </div>
-
-            <GoogleMap />
           </div>
         </div>
       </div>
