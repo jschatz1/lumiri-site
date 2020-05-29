@@ -8,8 +8,8 @@ backend:
   uploadMedia: "[skip ci] Upload “{{path}}”"
   deleteMedia: "[skip ci] Delete “{{path}}”"
 
-media_folder: static/assets
-public_folder: /assets
+media_folder: static/img
+public_folder: /img
 collections:
   - name: "pages"
     label: "Pages"
@@ -24,6 +24,19 @@ collections:
               widget: "hidden",
               default: "about-page",
             }
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+      - file: "src/pages/about/drschatz.md"
+        label: "About Dr. Tiffany Schatz"
+        name: "about dr. schatz"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: Image, name: image, widget: image }
           - { label: Title, name: title, widget: string }
           - { label: Body, name: body, widget: markdown }
       - file: "src/pages/index.md"
@@ -62,9 +75,9 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/patientinfo/insurance.md"
-        label: "Insurance Information"
-        name: "insurance information"
+      - file: "src/pages/patientinfo/prepare.md"
+        label: "Preparing for Surgery"
+        name: "prepare"
         fields:
           - {
               label: "Template Key",
