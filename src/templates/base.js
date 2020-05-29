@@ -9,6 +9,7 @@ export const BaseTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <section className="section section--gradient">
+      <SEO title={title} />
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">

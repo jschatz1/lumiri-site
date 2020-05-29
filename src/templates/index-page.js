@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Header from "../components/header"
 import Content, { HTMLContent } from "../components/Content"
@@ -9,7 +9,6 @@ import VideoHero from "../components/VideoHero"
 export const IndexPageTemplate = ({
   title,
   heading,
-  featured,
   main,
   content,
   contentComponent,
@@ -28,7 +27,13 @@ export const IndexPageTemplate = ({
                   <div className="tile is-parent">
                     <div className="is-child notification is-primary tile">
                       <h2 className="title is-size-2">{main.title}</h2>
-                      <h4 className="subtitle is-size-4">{main.description}</h4>
+                      <hr></hr>
+                      <h4 className="title is-size-4">{main.description}</h4>
+                      <Link to="/about">
+                        <button className="button is-pulled-right is-primary is-inverted">
+                          Learn More
+                        </button>
+                      </Link>
                     </div>
                   </div>
                   <div className="tile is-parent">
