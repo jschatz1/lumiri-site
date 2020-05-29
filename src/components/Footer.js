@@ -9,9 +9,9 @@ export default () => {
           © {new Date().getFullYear()},{` `}Lumiri
         </p>
         <Link>
-          <a className="level-left" href="/sitemap.xml">
+          <p className="level-left" href="/sitemap.xml">
             sitemap
-          </a>
+          </p>
         </Link>
       </div>
     </footer>

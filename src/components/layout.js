@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     <>
       <NavBar />
       <div>
-        <main>{children}</main>
+        <main style={{ minHeight: "800px" }}>{children}</main>
         <Footer />
       </div>
     </>

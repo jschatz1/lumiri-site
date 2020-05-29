@@ -46,22 +46,38 @@ const NavBar = ({ siteTitle }) => {
           <Link className="navbar-item" to="/">
             Home
           </Link>
-          <Link className="navbar-item" to="about">
-            About
-          </Link>
+          <div className="navbar-item has-dropdown is-hoverable">
+            <Link className="navbar-link" to="about">
+              About
+            </Link>
+            <div className="navbar-dropdown">
+              <Link className="navbar-item" to="about/drschatz">
+                About Dr. Tiffany Schatz
+              </Link>
+              <Link className="navbar-item" to="about">
+                About Lumiri Surgical
+              </Link>
+              <Link className="navbar-item" to="about/specialties">
+                Subspecialties and Areas of Clinical Concentration
+              </Link>
+              <Link className="navbar-item" to="about/hospitals">
+                Hospitals We Serve
+              </Link>
+              <Link className="navbar-item" to="about/media">
+                Press and Media
+              </Link>
+            </div>
+          </div>
           <div className="navbar-item has-dropdown is-hoverable">
             <Link className="navbar-link" to="patientinfo">
               Patient Information
             </Link>
             <div className="navbar-dropdown">
-              <Link className="navbar-item" to="patientinfo/insurance">
-                Insurance
+              <Link className="navbar-item" to="patientinfo/prepare">
+                Preparing for Surgery
               </Link>
-              <Link className="navbar-item" to="patientinfo">
+              <Link className="navbar-item" to="patientinfo/documents">
                 Documents
-              </Link>
-              <Link className="navbar-item" to="patientinfo/specialties">
-                Subspecialties and Areas of Clinical Concentration
               </Link>
               <Link className="navbar-item" to="patientinfo/telemedicine">
                 Telemedicine Call
@@ -85,11 +101,14 @@ const NavBar = ({ siteTitle }) => {
               <strong type="button">Patient Portal</strong>
             </a>
           </div>
-          <a href="https://facebook.com" className="navbar-item">
+          <a
+            href="https://www.facebook.com/TiffanySchatzMD/"
+            className="navbar-item"
+          >
             <FontAwesomeIcon size="lg" icon={faFacebook} />
           </a>
 
-          <a href="https://twitter.com" className="navbar-item">
+          <a href="https://twitter.com/tschatzmd" className="navbar-item">
             <FontAwesomeIcon size="lg" icon={faTwitter} />
           </a>
         </div>

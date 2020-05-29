@@ -23,9 +23,11 @@ const Header = () => {
                   className="title has-text-primary is-1"
                   style={{
                     paddingLeft: "1rem",
+
                     paddingRight: "1rem",
                     fontSize: "75px",
                     fontWeight: "bold",
+                    whiteSpace: "normal",
                     textShadow: "1px 1px black",
                   }}
                 >
