@@ -7,7 +7,6 @@ const IndexPagePreview = ({ entry, widgetFor }) => {
   const data = entry.getIn(["data"]).toJS()
 
   if (data) {
-    console.log(widgetFor("body").props.value)
     return (
       <IndexPageTemplate
         title={data.title}
