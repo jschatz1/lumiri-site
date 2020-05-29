@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 path: /about
-title: About Dr. Tiffany Schatz
+title: About
 ---
 
 Dr. Tiffany Schatz was trained in advanced minimally invasive approaches, with laparoscopic, thoracoscopic, and robotic procedures, as well as minimally invasive work-up of chest masses/lymphadenopathy with EBUS and endoscopy/bronchoscopy. She loves taking care of patients during a time in their lives when things are uncertain or frightening in the setting of illness and need for surgical evaluation and treatment.

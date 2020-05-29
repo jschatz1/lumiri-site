@@ -48,7 +48,6 @@ export const IndexPageTemplate = ({
         </div>
       </section>
 
-      <VideoHero />
       <div className="section contain">
         <div className="is-ancestor tile">
           <article className="tile is-parent is-primary">

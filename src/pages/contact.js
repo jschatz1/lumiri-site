@@ -4,13 +4,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import map from "../images/map.png"
 export default () => {
-  const boxStyle = {
-    margin: "20px",
-  }
   return (
     <Layout>
       <SEO title="Contact" />
-      <div className="container contain">
+      <section className="section contain">
         <div className="section" style={{ textAlign: "center" }}>
           <h2 className="title is-3"> To make an appointment: </h2>
           <p className="is-size-4">
@@ -19,7 +16,7 @@ export default () => {
         </div>
         <div className="columns">
           <div className="column">
-            <div className="box" style={boxStyle}>
+            <div>
               <div className="number-wrap">
                 <h2 className="title is-4">
                   Email:
@@ -60,12 +57,18 @@ export default () => {
             </div>
           </div>
           <div className="column">
-            <div className="box" style={boxStyle}>
+            <div>
               <ContactForm />
+            </div>
+            <div className="section">
+              <h3 className="title is-3">Schedule a phone call:</h3>
+              <div className="iframe-container-cal">
+                <iframe src={"/calendar.html"}></iframe>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </Layout>
   )
 }

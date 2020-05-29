@@ -22,7 +22,7 @@ const NavBar = ({ siteTitle }) => {
           <img
             src={logo}
             alt="lumiri logo"
-            style={{ width: "50px", paddingTop: "15px" }}
+            style={{ width: "50px", paddingTop: "20px" }}
           ></img>
         </Link>
 
@@ -69,7 +69,7 @@ const NavBar = ({ siteTitle }) => {
             </div>
           </div>
           <div className="navbar-item has-dropdown is-hoverable">
-            <Link className="navbar-link" to="patientinfo">
+            <Link className="navbar-link" to="patientinfo/prepare">
               Patient Information
             </Link>
             <div className="navbar-dropdown">

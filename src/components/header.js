@@ -8,7 +8,7 @@ const Header = () => {
       <section
         className="hero"
         style={{
-          background: `linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ), url(${doc})`,
+          background: `linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3) ), url(${doc})`,
           backgroundAttachment: "fixed",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
