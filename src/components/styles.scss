@@ -7,17 +7,25 @@
 $family-sans-serif: "Karla", sans-serif;
 @import "~bulma/bulma.sass";
 @import "~bulmaswatch/litera/_overrides.scss";
-html {
+body,
+.content {
   font-family: "Karla", sans-serif;
   font-size: 18px;
 }
 
+.navbar-dropdown a.navbar-item {
+  font-size: 16px;
+}
+.title {
+  text-transform: uppercase;
+}
 .contain {
   margin: 0 auto;
   max-width: 1200px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .iframe-container {
   overflow: hidden;
   // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
@@ -73,4 +81,18 @@ img.rounded {
   width: 100px;
   border-radius: 50%;
   object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.mediaBox {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.footerBox {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
