@@ -18,10 +18,6 @@ title: Preparing for Surgery
 
 - Use the Chlorhexidine Gluconate (CHG or Hibiclens) anti-bacterial wash **neck
   down either the night before or the morning of your surgery**. Do not use any
-  products after use. Please refer to that attached form for more information
-  regarding the anti-bacterial wash.
+  products after use.
 
-For any questions or concerns regarding these matters, please contact through the patient
-portal, call us at (240)241-0420. You will receive a phone call to ensure you understand these
-instructions, and to confirm your time of surgery by the hospital preoperative nurses
-approximately 48 hours prior to surgery.
+For any questions or concerns regarding these matters, please contact through the [patient portal](https://patientally.com/), our [contact page](/contact) call us at [(240)241-0420](<tel:(240)241-0420>). You will receive a phone call to ensure you understand these instructions, and to confirm your time of surgery by the hospital preoperative nurses approximately 48 hours prior to surgery.

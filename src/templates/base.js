@@ -12,9 +12,7 @@ export const BaseTemplate = ({ title, content, contentComponent }) => {
       <SEO title={title} />
 
       <div className="section">
-        <h2 className="title is-size-4 has-text-weight-bold is-bold-light">
-          {title}
-        </h2>
+        <h2 className="title is-size-3 has-text-centered">{title}</h2>
         <PageContent className="content" content={content} />
       </div>
     </section>

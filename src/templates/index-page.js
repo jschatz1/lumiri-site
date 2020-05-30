@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 import Content, { HTMLContent } from "../components/Content"
 import SEO from "../components/seo"
-import VideoHero from "../components/VideoHero"
 export const IndexPageTemplate = ({
   title,
   heading,
@@ -26,9 +25,9 @@ export const IndexPageTemplate = ({
                 <div className="tile">
                   <div className="tile is-parent">
                     <div className="is-child notification is-primary tile">
-                      <h2 className="title is-size-2">{main.title}</h2>
+                      <h2 className="is-size-2">{main.title}</h2>
                       <hr></hr>
-                      <h4 className="title is-size-4">{main.description}</h4>
+                      <h4 className="is-size-4">{main.description}</h4>
                       <Link to="/about">
                         <button className="button is-pulled-right is-primary is-inverted">
                           Learn More

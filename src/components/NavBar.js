@@ -5,7 +5,7 @@ import logo from "../images/logo.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons"
 
-const NavBar = ({ siteTitle }) => {
+const NavBar = () => {
   const [isActive, setisActive] = React.useState(false)
   return (
     <nav
@@ -64,7 +64,7 @@ const NavBar = ({ siteTitle }) => {
                 Hospitals We Serve
               </Link>
               <Link className="navbar-item" to="about/media">
-                Press and Media
+                Articles and Media
               </Link>
             </div>
           </div>
@@ -115,14 +115,6 @@ const NavBar = ({ siteTitle }) => {
       </div>
     </nav>
   )
-}
-
-NavBar.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-NavBar.defaultProps = {
-  siteTitle: ``,
 }
 
 export default NavBar
