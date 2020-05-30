@@ -6,6 +6,7 @@ import { navigate } from "gatsby"
 export default () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
+  const [dateOfBirth, setDateOfBirth] = useState("")
   const [phone, setPhone] = useState("")
   const [message, setMessage] = useState("")
   const encode = data => {
@@ -15,7 +16,14 @@ export default () => {
   }
 
   const handleSubmit = e => {
-    const data = { "form-name": "contact", name, email, phone, message }
+    const data = {
+      "form-name": "contact",
+      name,
+      dateOfBirth,
+      email,
+      phone,
+      message,
+    }
 
     fetch("/", {
       method: "POST",
@@ -37,6 +45,9 @@ export default () => {
     const { name, value } = e.target
     if (name === "name") {
       return setName(value)
+    }
+    if (name === "dateOfBirth") {
+      return setDateOfBirth(value)
     }
     if (name === "email") {
       return setEmail(value)
@@ -62,7 +73,11 @@ export default () => {
         draggable
         pauseOnHover
       />
-      <h2 className="title">Contact</h2>
+      <h2 className="is-size-3">Contact form</h2>
+      <h3 className="is-size-4">
+        Send us a message and your information. We will add you to our Patient
+        Portal and be in-touch shortly.
+      </h3>
       <form
         id="contact-form"
         name="contact"
@@ -80,6 +95,19 @@ export default () => {
               className="input control"
               name="name"
               value={name}
+              onChange={handleChange}
+              required
+            />
+          </div>
+        </div>
+        <div className="field">
+          <label className="label">Date of Birth</label>
+          <div>
+            <input
+              type="date"
+              className="input control"
+              name="dateOfBirth"
+              value={dateOfBirth}
               onChange={handleChange}
               required
             />
