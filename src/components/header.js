@@ -6,14 +6,15 @@ const Header = () => {
   const heroBackground = {
     background: `linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ), url(${doc})`,
     backgroundAttachment: "fixed",
-    backgroundPosition: "center",
+    backgroundPosition: "center top",
     backgroundRepeat: "no-repeat",
-    backgroundSize: "100%",
+    backgroundSize: "125%",
+    height: "300px",
   }
   const heroTitle = {
     paddingLeft: "1rem",
     paddingRight: "1rem",
-    fontSize: "75px",
+    fontSize: "8vw",
     fontWeight: "bold",
     whiteSpace: "normal",
     textShadow: "1px 1px black",
