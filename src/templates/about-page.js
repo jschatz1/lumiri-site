@@ -22,10 +22,8 @@ export const AboutPageTemplate = ({
             <img className="rounded" src={image.childImageSharp.fluid.src} />
           </div>
         ) : null}
-        <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-          {title}
-        </h2>
 
+        <h2 className="title is-size-3 has-text-centered">{title}</h2>
         <PageContent className="content" content={content} />
       </div>
     </section>

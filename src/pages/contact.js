@@ -9,22 +9,23 @@ export default () => {
       <SEO title="Contact" />
       <section className="section contain">
         <div className="section" style={{ textAlign: "center" }}>
-          <h2 className="title is-3"> To make an appointment: </h2>
-          <p className="is-size-4">
-            Please call or send us a message with the form below.
+          <h2 className="title is-3 has-text-centered">Contact us</h2>
+          <p className="is-size-4 has-text-centered">
+            To schedule an appointment, please call, send us a message, or
+            schedule a call with Calandly below.
           </p>
         </div>
         <div className="columns">
           <div className="column">
             <div>
               <div className="number-wrap">
-                <h2 className="title is-4">
+                <h2 className="is-size-4">
                   Email:
                   <span className="is-size-5">
                     <a href="mailto:support@lumiri.com"> support@lumiri.com</a>
                   </span>{" "}
                 </h2>
-                <h2 className="title is-4">
+                <h2 className="is-size-4">
                   Phone:
                   <span className="is-size-5">
                     {" "}
@@ -32,7 +33,7 @@ export default () => {
                   </span>{" "}
                 </h2>
 
-                <h2 className="title is-4">
+                <h2 className="is-size-4">
                   Fax:
                   <span className="is-size-5">
                     {" "}
@@ -61,7 +62,7 @@ export default () => {
               <ContactForm />
             </div>
             <div className="section">
-              <h3 className="title is-3">Schedule a phone call:</h3>
+              <h3 className="is-size-3">Schedule a phone call:</h3>
               <div className="iframe-container-cal">
                 <iframe src={"/calendar.html"}></iframe>
               </div>
