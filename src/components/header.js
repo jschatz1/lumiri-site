@@ -1,36 +1,31 @@
 import React from "react"
 import { Link } from "gatsby"
-import doc from "../images/doc.jpg"
+import doc from "../images/hero.jpg"
 
 const Header = () => {
+  const heroBackground = {
+    background: `linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ), url(${doc})`,
+    backgroundAttachment: "fixed",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "100%",
+  }
+  const heroTitle = {
+    paddingLeft: "1rem",
+    paddingRight: "1rem",
+    fontSize: "75px",
+    fontWeight: "bold",
+    whiteSpace: "normal",
+    textShadow: "1px 1px black",
+  }
   return (
     <>
-      <section
-        className="hero"
-        style={{
-          background: `linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3) ), url(${doc})`,
-          backgroundAttachment: "fixed",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      >
+      <section className="hero" style={heroBackground}>
         <div className="hero-body">
           <div className="container">
             <div style={{ textAlign: "center" }}>
               <Link to="/">
-                <h1
-                  className="title has-text-primary is-1"
-                  style={{
-                    paddingLeft: "1rem",
-
-                    paddingRight: "1rem",
-                    fontSize: "75px",
-                    fontWeight: "bold",
-                    whiteSpace: "normal",
-                    textShadow: "1px 1px black",
-                  }}
-                >
+                <h1 className="title has-text-primary is-1" style={heroTitle}>
                   Lumiri Surgical
                 </h1>
               </Link>
