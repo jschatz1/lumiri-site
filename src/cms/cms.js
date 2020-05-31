@@ -12,5 +12,7 @@ import IndexPagePreview from "./preview-templates/IndexPagePreview"
 
 CMS.registerPreviewTemplate("index", IndexPagePreview)
 CMS.registerPreviewTemplate("about", AboutPagePreview)
-// CMS.registerPreviewTemplate("products", ProductPagePreview)
-// CMS.registerPreviewTemplate("blog", BlogPostPreview)
+CMS.registerPreviewTemplate("about dr. schatz", AboutPagePreview)
+CMS.registerPreviewTemplate("prepare", AboutPagePreview)
+CMS.registerPreviewTemplate("base", AboutPagePreview)
+CMS.registerPreviewTemplate("specialties", AboutPagePreview)

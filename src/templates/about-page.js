@@ -14,8 +14,6 @@ export const AboutPageTemplate = ({
 
   return (
     <section className="section contain">
-      <SEO title={title} />
-
       <div className="section">
         {image ? (
           <div>
@@ -46,7 +44,7 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO title={post.frontmatter.title} />
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
