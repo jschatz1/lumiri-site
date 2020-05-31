@@ -50,7 +50,7 @@ body,
 .iframe-container-cal {
   overflow: hidden;
   // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
-  min-height: 600px;
+  min-height: 400px;
   width: 400px;
   margin-left: 20px;
   margin-top: 10px;
@@ -60,7 +60,7 @@ body,
 
 .iframe-container-cal iframe {
   border: 0;
-  height: 700px;
+  min-height: 400px;
   margin: 0 auto;
   width: 400px;
   left: 0;

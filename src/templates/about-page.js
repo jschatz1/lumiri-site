@@ -19,7 +19,11 @@ export const AboutPageTemplate = ({
       <div className="section">
         {image ? (
           <div>
-            <img className="rounded" src={image.childImageSharp.fluid.src} />
+            <img
+              className="rounded"
+              src={image.childImageSharp.fluid.src}
+              alt="portrait of doctor"
+            />
           </div>
         ) : null}
 

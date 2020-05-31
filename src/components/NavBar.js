@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/logo.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -22,7 +21,7 @@ const NavBar = () => {
           <img
             src={logo}
             alt="lumiri logo"
-            style={{ width: "50px", paddingTop: "20px" }}
+            style={{ width: "50px", paddingTop: "12px" }}
           ></img>
         </Link>
 
@@ -30,10 +29,14 @@ const NavBar = () => {
           onClick={() => {
             setisActive(!isActive)
           }}
+          onKeyDown={() => {
+            setisActive(!isActive)
+          }}
           role="button"
           className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
           aria-label="menu"
           aria-expanded="false"
+          tabIndex={0}
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
