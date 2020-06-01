@@ -17,12 +17,8 @@ const NavBar = () => {
         className="navbar-brand"
         style={{ paddingLeft: "1rem", paddingRight: "1rem" }}
       >
-        <Link to="/">
-          <img
-            src={logo}
-            alt="lumiri logo"
-            style={{ width: "50px", paddingTop: "12px" }}
-          ></img>
+        <Link className="navbar-item" to="/">
+          <img src={logo} alt="lumiri logo"></img>
         </Link>
 
         <div
