@@ -13,10 +13,7 @@ const NavBar = () => {
       aria-label="main navigation"
       style={{ paddingRight: "20px" }}
     >
-      <div
-        className="navbar-brand"
-        style={{ paddingLeft: "1rem", paddingRight: "1rem" }}
-      >
+      <div className="navbar-brand">
         <Link className="navbar-item" to="/">
           <img src={logo} alt="lumiri logo"></img>
         </Link>
