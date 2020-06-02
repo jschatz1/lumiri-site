@@ -62,7 +62,7 @@ collections:
                   { label: Featured, name: featured, widget: text },
                 ],
             }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
       - file: "src/pages/patientinfo/prepare.md"
         label: "Preparing for Surgery"
         name: "prepare"
