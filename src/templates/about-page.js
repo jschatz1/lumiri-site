@@ -14,12 +14,14 @@ export const AboutPageTemplate = ({
 
   return (
     <section className="section contain">
-      <SEO title={title} />
-
       <div className="section">
         {image ? (
           <div>
-            <img className="rounded" src={image.childImageSharp.fluid.src} />
+            <img
+              className="rounded"
+              src={image.childImageSharp.fluid.src}
+              alt="portrait of doctor"
+            />
           </div>
         ) : null}
 
@@ -42,7 +44,7 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO title={post.frontmatter.title} />
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}

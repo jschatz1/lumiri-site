@@ -17,6 +17,7 @@ const Media = () => {
             Watch Dr. Schatz on Sisters4Fitness
           </h2>
           <iframe
+            title="video of Dr. Schatz on Sister4Fitnessß"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/QJR1aodXH20"
@@ -37,6 +38,7 @@ const Media = () => {
               className="is-size-5 has-text-centered"
               href={cancerReport}
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 style={{
@@ -46,7 +48,7 @@ const Media = () => {
                   height: "auto",
                 }}
                 src={cancerReportImg}
-                alt="image of report cover"
+                alt="cancer report cover"
               />
               <p className="is-size-5 has-text-centered">Click to view</p>
             </a>

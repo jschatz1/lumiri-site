@@ -12,7 +12,7 @@ export default () => {
           <Link to="/contact">contact us here.</Link>
         </h4>
         <div className="iframe-container" style={{ margin: "0 auto" }}>
-          <iframe src={"/tele.html"} />
+          <iframe title="telemedicine call" src={"/tele.html"} />
         </div>
       </section>
     </Layout>

@@ -86,12 +86,20 @@ export default () => {
         netlify-honeypot="bot-field"
         data-netlify="true"
       >
-        <input type="hidden" name="form-name" value="Contact" />
+        <input
+          aria-label="hidden"
+          type="hidden"
+          name="form-name"
+          value="Contact"
+        />
         <div className="field">
-          <label className="label">Name</label>
+          <label htmlFor="name" className="label">
+            Name
+          </label>
           <div>
             <input
               type="text"
+              aria-label="name"
               className="input control"
               name="name"
               value={name}
@@ -101,10 +109,13 @@ export default () => {
           </div>
         </div>
         <div className="field">
-          <label className="label">Date of Birth</label>
+          <label htmlFor="date" className="label">
+            Date of Birth
+          </label>
           <div>
             <input
               type="date"
+              aria-label="date"
               className="input control"
               name="dateOfBirth"
               value={dateOfBirth}
@@ -114,12 +125,16 @@ export default () => {
           </div>
         </div>
         <div className="field">
-          <label className="label">Email address</label>
+          <label htmlFor="email" className="label">
+            Email address
+          </label>
           <div>
             <input
               type="email"
+              aria-label="email"
               className="input control"
               name="email"
+              id="email"
               value={email}
               onChange={handleChange}
               required
@@ -127,10 +142,13 @@ export default () => {
           </div>
         </div>
         <div className="field">
-          <label className="label">Phone Number</label>
+          <label htmlFor="phone" className="label">
+            Phone Number
+          </label>
           <div>
             <input
               type="tel"
+              aria-label="tel"
               className="input control"
               name="phone"
               value={phone}
@@ -140,10 +158,13 @@ export default () => {
           </div>
         </div>
         <div className="field">
-          <label className="label">Message</label>
+          <label htmlFor="message" className="label">
+            Message
+          </label>
           <div>
             <textarea
               className="textarea control"
+              aria-label="message"
               rows="5"
               name="message"
               value={message}

@@ -12,7 +12,7 @@ export default () => {
           <h2 className="title is-3 has-text-centered">Contact us</h2>
           <p className="is-size-4 has-text-centered">
             To schedule an appointment, please call, send us a message, or
-            schedule a call with Calandly below.
+            schedule an appointment with Calandly below.
           </p>
         </div>
         <div className="columns">
@@ -47,7 +47,11 @@ export default () => {
                 </h2>
 
                 <h2 className="is-size-4">Address:</h2>
-                <a target="_blank" href="https://goo.gl/maps/ZZBcm28HgATFGErp6">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://goo.gl/maps/ZZBcm28HgATFGErp6"
+                >
                   <div className="is-size-5">
                     <p>5550 Friendship Blvd Suite 360</p>
                     <p> Chevy Chase, MD 20815</p>
@@ -62,9 +66,9 @@ export default () => {
               <ContactForm />
             </div>
             <div className="section">
-              <h3 className="is-size-3">Schedule a phone call:</h3>
+              <h3 className="is-size-3">Schedule an appointment:</h3>
               <div className="iframe-container-cal">
-                <iframe src={"/calendar.html"}></iframe>
+                <iframe title="calendly iframe" src={"/calendar.html"}></iframe>
               </div>
             </div>
           </div>
