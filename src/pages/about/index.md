@@ -2,7 +2,6 @@
 templateKey: base
 path: /about
 title: About Lumiri Surgical
-image:
 ---
 
 Lumiri Surgical is a surgery practice located in Montgomery and Prince George’s counties, with an emphasis on advanced minimally invasive surgical techniques for general and thoracic surgery. Dr. Schatz started Lumiri Surgical in 2020 in order to provide personalized, state-of-the art surgical care to patients. Lumiri Surgical is committed to connecting patients with expert surgical care with compassion and kindness, while making navigating the healthcare system as comfortable as possible by continuing patient education and utilizing technology to streamline communication and efficiency.
