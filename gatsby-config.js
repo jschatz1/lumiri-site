@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Lumiri Surgical`,
     description: `Website for Lumiri.`,
-    siteUrl: `http://localhost:8000`,
+    siteUrl: `https://lumiri.com`,
     author: `Michael Wells`,
   },
   plugins: [

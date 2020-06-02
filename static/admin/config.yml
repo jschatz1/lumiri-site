@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: Michael-Wayne-Wells/lumiri-gatsby-site
+  repo: jschatz1/lumiri-site
   commit_messages:
   create: "Create {{collection}} “{{slug}}”"
   update: "Update {{collection}} “{{slug}}”"
