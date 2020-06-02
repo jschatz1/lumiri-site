@@ -92,10 +92,8 @@ export default () => {
           <p>
             © {new Date().getFullYear()},{` `}Lumiri
           </p>
-          <Link style={{ color: "white" }}>
-            <p className="level-left" href="/sitemap.xml">
-              sitemap
-            </p>
+          <Link to="/sitemap.xml" style={{ color: "white" }}>
+            <p className="level-left">sitemap</p>
           </Link>
         </div>
       </div>
