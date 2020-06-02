@@ -10,7 +10,7 @@ export default () => {
           <div className="column">
             <aside className="menu ">
               <ul className="menu-list">
-                <p class="menu-label is-size-5"> About </p>
+                <p className="menu-label is-size-5"> About </p>
                 <Link to="/about">
                   <li>About Lumiri</li>
                 </Link>
@@ -33,7 +33,7 @@ export default () => {
             {" "}
             <aside className="menu ">
               <ul className="menu-list">
-                <p class="menu-label is-size-5"> Patient Info </p>
+                <p className="menu-label is-size-5"> Patient Info </p>
                 <Link to="/patientinfo/prepare">
                   <li>Preparing for Surgery</li>
                 </Link>
