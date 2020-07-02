@@ -67,6 +67,12 @@ export default () => {
                   </a>
                 </li>
                 <li>
+                  <a href="https://goo.gl/maps/oBtzp5J6MsVbQ3s17">
+                    <p>8116 Goodluck Rd. Suite 215</p>
+                    <p> Lanham, MD 20607</p>
+                  </a>
+                </li>
+                <li>
                   <a href="tel:(240) 241-0420">Phone: (240) 241-0420</a>
                 </li>
                 <li>
