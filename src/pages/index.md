@@ -6,8 +6,8 @@ heading: Dr. Tiffany Schatz
 main:
   title: Lumiri Surgical
   description: >
-    Located in Montgomery and Prince George’s counties, with an emphasis on
-    advanced minimally invasive surgical techniques.
+    Located in Montgomery and Bucks’s counties in Pennsylvania, with an emphasis
+    on advanced minimally invasive surgical techniques.
   featured: >-
     “There is no greater reward than to be able to meet a patient in the midst
     of their crisis, pain, or illness and know that I have the knowledge and
