@@ -15,7 +15,7 @@ Minimally invasive surgery (MIS), Video-assisted thoracoscopic surgery (VATS), r
 
 Comprehensive, multidisciplinary lung cancer team 
 
-Low dose CT for lung cancer screening Pulmonary nodule clinic
+Referral for Low dose CT for lung cancer screening and interventional pulmonology
 
 ### Specialties:
 
