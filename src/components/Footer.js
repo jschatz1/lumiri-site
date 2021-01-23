@@ -61,26 +61,21 @@ export default () => {
               <h5 className="menu-label is-size-5">Lumiri Surgical LLC.</h5>
               <ul className="menu-list">
                 <li>
-                  <a href="https://goo.gl/maps/ZZBcm28HgATFGErp6">
-                    <p>5550 Friendship Blvd Suite 360</p>
-                    <p> Chevy Chase, MD 20815</p>
+                  <a href="https://goo.gl/maps/QCGsArtCggzkXyGU7">
+                    <p>817 Lawn Ave Suite 4</p>
+                    <p>Upper Bucks Medical Arts Building</p>
+                    <p>Sellersville, PA 18960</p>
                   </a>
                 </li>
                 <li>
-                  <a href="https://goo.gl/maps/oBtzp5J6MsVbQ3s17">
-                    <p>8116 Goodluck Rd. Suite 215</p>
-                    <p> Lanham, MD 20607</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:(240) 241-0420">Phone: (240) 241-0420</a>
+                  <a href="tel:(215) 695-2777">Phone: (215) 695-2777</a>
                 </li>
                 <li>
                   <a
-                    href="tel:(862)
-                    298-0732"
+                    href="tel:(215)
+                    695-2052"
                   >
-                    Fax: (862) 298-0732
+                    Fax: (215) 695-2052
                   </a>
                 </li>
               </ul>
