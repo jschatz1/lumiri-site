@@ -63,6 +63,8 @@ export default () => {
             </div>
             <div className="section">
               <h3 className="is-size-3">Schedule an appointment:</h3>
+              <p>In office Thursday mornings.</p>
+              <p>For telemedicine and other in person times please call to schedule.</p>
               <div className="iframe-container-cal">
                 <iframe title="calendly iframe" src={"/calendar.html"}></iframe>
               </div>
