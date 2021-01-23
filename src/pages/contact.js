@@ -29,7 +29,7 @@ export default () => {
                   Phone:
                   <span className="is-size-5">
                     {" "}
-                    <a href="tel:(240) 241-0420">(240) 241-0420</a>
+                    <a href="tel:(215) 265-2777">(215) 265-2777</a>
                   </span>{" "}
                 </h2>
 
@@ -37,12 +37,7 @@ export default () => {
                   Fax:
                   <span className="is-size-5">
                     {" "}
-                    <a
-                      href="tel:(862)
-                    298-0732"
-                    >
-                      (862) 298-0732
-                    </a>
+                    <a href="tel:(215) 265-2052">(215) 265-2052</a>
                   </span>
                 </h2>
 
@@ -50,11 +45,12 @@ export default () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://goo.gl/maps/ZZBcm28HgATFGErp6"
+                  href="https://goo.gl/maps/QCGsArtCggzkXyGU7"
                 >
                   <div className="is-size-5">
-                    <p>5550 Friendship Blvd Suite 360</p>
-                    <p> Chevy Chase, MD 20815</p>
+                    <p>817 Lawn Ave  Suite 4</p>
+                    <p>Upper Bucks Medical Arts Building</p>
+                    <p>Sellersville, PA 18960</p>
                   </div>
                   <img src={map} alt="Map of Lumiri location" />
                 </a>
